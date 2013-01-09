@@ -1,6 +1,6 @@
 ##PLOTS LEAFLET VIEWER##
 
-This is a leaflet-based tsomething msomething ssomething (TMS) viewer which accepts a TMS URL as a GET parameter. Good for fullscreen map viewing and embedding.
+This is a leaflet-based tiled map service (TMS) viewer which accepts a TMS URL as a GET parameter. Good for fullscreen map viewing and embedding.
 
 Serve the repository directory as static pages on a webserver.
 
