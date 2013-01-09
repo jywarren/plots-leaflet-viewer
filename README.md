@@ -1,8 +1,10 @@
 ##PLOTS LEAFLET VIEWER##
 
-A leaflet-based TMS viewer which accepts a TMS URL as a GET parameter. Good for fullscreen map viewing and embedding.
+This is a leaflet-based tsomething msomething ssomething (TMS) viewer which accepts a TMS URL as a GET parameter. Good for fullscreen map viewing and embedding.
 
-It accests parameters for a TMS as well as others, following this syntax:
+Serve the repository directory as static pages on a webserver.
+
+The index.html page accests query parameters for a TMS as well as others, following this syntax:
 
 * tms - with trailing slahs, such as http://mapknitter.org/tms/lone-rock-pond/
 * lon - center longitude, required
