@@ -2,9 +2,9 @@
    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
     <title>PLOTS Leaflet Viewer</title>
-    <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css">
+    <link rel="stylesheet" href="//leaflet.cloudmade.com/dist/leaflet.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-    <script src="http://mapknitter.org/javascripts/prototype.js"></script>
+    <script src="//mapknitter.org/javascripts/prototype.js"></script>
 
     <style>
 	#sharelink, #share {
@@ -48,8 +48,8 @@
     </div>
 
     <div class=" leaflet-container" id="map" style="width:100%;height:100%;"></div>
-    <script src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
-    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>                                                                   
+    <script src="//leaflet.cloudmade.com/dist/leaflet.js"></script>
+    <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>                                                                   
     <script src="../google.js"></script>
     <script>
 
@@ -84,7 +84,7 @@
    window.onload = function() {
 
 	var tms = get_param('tms')+"{z}/{x}/{y}.png"
-	var background_tms = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+	var background_tms = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 	//var backdroptms = "http://hypercube.telascience.org/tilecache/tilecache.py/1.0.0/NAIP_ALL/{z}/{x}/{y}.png"
 	//var backdroptms = "http://hypercube.telascience.org/tilecache/tilecache.py/1.0.0/NewWorld_google/{z}/{x}/{y}.png"
 	var minZoom = get_param('min') || 12

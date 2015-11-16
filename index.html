@@ -1,15 +1,15 @@
 <html><head> 
    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-    <title>PLOTS Leaflet Viewer</title>
+    <title>Public Lab Leaflet Viewer</title>
 
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="google.js"></script>
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-    <script src="http://mapknitter.org/javascripts/prototype.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prototype/1.7.2/prototype.js"></script>
 
     <style>
 	#sharelink, #share {
@@ -41,7 +41,7 @@
   </head>
   <body style="margin:0;"> 
     <div id="sharelink">
-	<a href="javascript:void(0);" onClick="$('share').show()">share</a> | <a href="http://publiclab.org">PublicLab.org</a>
+	<a href="javascript:void(0);" onClick="$('share').show()">share</a> | <a href="//publiclab.org">PublicLab.org</a>
     </div>
 
     <div id="share" style="display:none;">
@@ -89,7 +89,7 @@
    window.onload = function() {
 
 	var tms = get_param('tms')+"{z}/{x}/{y}.png"
-	var background_tms = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+	var background_tms = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 	//var backdroptms = "http://hypercube.telascience.org/tilecache/tilecache.py/1.0.0/NAIP_ALL/{z}/{x}/{y}.png"
 	//var backdroptms = "http://hypercube.telascience.org/tilecache/tilecache.py/1.0.0/NewWorld_google/{z}/{x}/{y}.png"
 	var minZoom = get_param('min') || 12

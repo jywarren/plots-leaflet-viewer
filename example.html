@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="leaflet/dist/leaflet.css" />
 	<link rel="stylesheet" href="osb/osb.css" />
 	<script src="leaflet/dist/leaflet.js"></script>
-	<!--script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script-->
+	<!--script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script-->
 	<script src="leaflet/src/control/Control.Permalink.js"></script>
 
 	<script src="Edit.js"></script>
@@ -16,14 +16,14 @@
 	<div style="width:100%; height:100%" id="map"></div>
 <script type='text/javascript'>
 var map = new L.Map('map', {center: new L.LatLng(53.9618, 58.4277), zoom: 13});
-var osm = new L.TileLayer('http://{s}.tile.osmosnimki.ru/kosmo/{z}/{x}/{y}.png');
-var mpn = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-var qst = new L.TileLayer('http://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {attribution:'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">'});
-var hyb = new L.TileLayer('http://{s}.tile.osmosnimki.ru/hyb/{z}/{x}/{y}.png');
-var irs = new L.TileLayer('http://tile.osmosnimki.ru/basesat/{z}/{x}/{y}.jpg');
+var osm = new L.TileLayer('https://{s}.tile.osmosnimki.ru/kosmo/{z}/{x}/{y}.png');
+var mpn = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var qst = new L.TileLayer('https://otile1.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png', {attribution:'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">'});
+var hyb = new L.TileLayer('https://{s}.tile.osmosnimki.ru/hyb/{z}/{x}/{y}.png');
+var irs = new L.TileLayer('https://tile.osmosnimki.ru/basesat/{z}/{x}/{y}.jpg');
 var osb = new L.OpenStreetBugs();
-var wms = new L.TileLayer.WMS('http://wms.latlon.org/', {layers:'irs', crs: L.CRS.EPSG4326});
-var kadastr = new L.TileLayer.WMS('http://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer', {format:'image/png', transparent:'true', layers:'16,15,14,13,11,10,9,22,21,20,19,18,7,6', tileSize:512});
+var wms = new L.TileLayer.WMS('https://wms.latlon.org/', {layers:'irs', crs: L.CRS.EPSG4326});
+var kadastr = new L.TileLayer.WMS('https://maps.rosreestr.ru/arcgis/services/Cadastre/CadastreWMS/MapServer/WMSServer', {format:'image/png', transparent:'true', layers:'16,15,14,13,11,10,9,22,21,20,19,18,7,6', tileSize:512});
 map.addLayer(osm);
 map.addLayer(osb);
 map.addControl(new L.Control.Scale({width: 100, position: L.Control.Position.BOTTOM_LEFT}));
@@ -47,7 +47,7 @@ track();
 */
 </script>
 
-<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+<script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
 <script src="Google.js"></script>
 <script type='text/javascript'>
 map.addControl(new L.Control.Layers({'OSM':osm, 'Mapnik':mpn, 'MapQuest':qst, 'Scanex':wms, 'Google':new L.Google()}
